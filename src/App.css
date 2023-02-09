@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Unbounded:wght@300&display=swap');
+.mainDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(88, 87, 87);
+  height: 100vh;
+  font-family: 'Unbounded', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+/*** Module To Do ***/
+.todoDiv {
+  border: 8px solid grey ;
+  background-color: rgb(242, 163, 242);
+  height: 80vh;
+  width: 60vh;
+  margin: 20px;
+  border-radius: 15px;
+}
+.title {
+  text-align: center;
+  margin: 25px 0px 20px 0px;
+  font-size: 24px;
+  color: black;
+}
+.myText {
+  font-family: 'Dancing Script', cursive;
+  font-size: 58px;
+  color: rgb(100, 99, 99);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*** Section input = bouton Ajouter ***/
+.divInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.input {
+  height:20px;
+  width:250px;
+  margin-right: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: 'Unbounded', cursive;
+  background-color: lightgray;
+}
+.input:focus {
+ background-color: white;
+}
+.buttonAdd {
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Unbounded', cursive;
+  font-size: 11px;
+  font-weight: bold;
+  height: 25px;
+  width: 100px;
+  background-color: rgb(162, 162, 162);
+}
+
+/*** Section liste + bouton Supprimer ***/
+.mainDivTodoList {
+height: 70%;
+}
+.divTodoList  {
+  display: flex;
+  margin: 0px 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2px solid grey;
+}
+.todoList  {
+ font-size: 14px;
+}
+.buttonSupp {
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*** Section bouton Imprimer ***/
+.divButtonImp {
+  display: flex;
+  justify-content: center;
+}
+.buttonImp {
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Unbounded', cursive;
+  font-size: 11px;
+  font-weight: bold;
+  height: 25px;
+  width: 100px;
+  background-color: rgb(162, 162, 162);
 }
